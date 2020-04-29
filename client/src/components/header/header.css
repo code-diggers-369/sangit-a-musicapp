@@ -1,0 +1,91 @@
+.header-main {
+  background-color: #3f51b5;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex {
+  float: 1;
+}
+
+.header-logo {
+  font-size: 25px;
+  font-weight: 700;
+  font-family: "Ubuntu", sans-serif;
+}
+
+@media only screen and (min-width: 400px) {
+  input.search-input {
+    width: 150px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  input.search-input {
+    width: 300px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  input.search-input {
+    width: 400px;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  input.search-input {
+    width: 500px;
+  }
+}
+
+button:focus {
+  outline: none;
+}
+
+input:focus {
+  border: 0;
+  outline: 0;
+}
+
+/* new */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 400px) {
+  div.searchcard {
+    height: 370px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  div.searchcard {
+    height: 500px;
+    text-align: center;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 700px) {
+  div.searchcard {
+    height: 380px;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  div.searchcard {
+    height: 380px;
+    text-align: center;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  div.searchcard {
+    height: 410px;
+    text-align: center;
+  }
+}
