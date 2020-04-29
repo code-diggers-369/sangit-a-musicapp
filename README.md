@@ -14,3 +14,9 @@ Visit: https://sangit.netlify.app/
 
 ## Homepage
 ![GitHub Logo](/homepage.jpg)
+
+## Playing In Pc
+![GitHub Logo](/pc-sangit.png)
+
+## Playing In Mobile
+![GitHub Logo](/mobile-sangit.png)
