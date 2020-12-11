@@ -18,9 +18,12 @@ app.listen(port, () => {
 app.get("/download", (req, res) => {
   var URL = req.query.URL;
 
-  ytdl.getInfo(URL).then((info) => {
-    const format = ytdl.filterFormats(info.formats, "audioonly");
+  ytdl
+    .getInfo(URL)
+    .then((info) => {
+      const format = ytdl.filterFormats(info.formats, "audioonly");
 
-    res.json(format[1].url);
-  });
+      res.json(format[1].url);
+    })
+    .catch((err) => console.log(err));
 });
