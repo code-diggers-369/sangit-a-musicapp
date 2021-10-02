@@ -9,7 +9,11 @@ Listen Online Music Website. This Project Is Use Youtube Data To Display
 2) Then Run Server Side Code **cd server && nodemon index.js** Notedown Server Port.
 3) Search api.js File **client\src\components\api\api.js** Just Enter Youtube Apikey In It.
 4) Then Run Client Side Code **cd client && yarn start || cd client && npm start**.
-5) And Boom Site Is Running. Just Play Music And Enjoy
+5) And Also Replace Youtube Api Key In Api Folder -> api.js Find API_KEY And Past Here And Boom Site Is Running. Just Play Music And Enjoy
+
+# Or Use Dev Script
+1) Make Sure You Had Install Client And Server Folder All Module Use Command (cd client && npm i) & (cd server && npm i)
+2) Then In Root Directory Run Script (npm run dev)
 
 # Live Demo
 Visit: https://sangit-india.herokuapp.com/

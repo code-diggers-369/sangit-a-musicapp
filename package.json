@@ -1,0 +1,25 @@
+{
+  "name": "sangit-a-musicapp",
+  "version": "1.0.0",
+  "description": "Listen Online Music Website. This Project Is Use Youtube Data To Display",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client \"",
+    "client": "cd client && npm run start",
+    "server": "cd server && nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/code-diggers-369/sangit-a-musicapp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/code-diggers-369/sangit-a-musicapp/issues"
+  },
+  "homepage": "https://github.com/code-diggers-369/sangit-a-musicapp#readme",
+  "dependencies": {
+    "concurrently": "^6.3.0"
+  }
+}

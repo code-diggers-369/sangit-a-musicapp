@@ -15,15 +15,18 @@ app.listen(port, () => {
 
 /////get request handel here get url for one video
 
-app.get("/download", (req, res) => {
-  var URL = req.query.URL;
+app.get("/download", async(req, res) => {
+  try {
+    var URL = req.query.URL;
 
-  ytdl
-    .getInfo(URL)
-    .then((info) => {
-      const format = ytdl.filterFormats(info.formats, "audioonly");
+    const info = await ytdl.getInfo(URL);
 
-      res.json(format[1].url);
-    })
-    .catch((err) => console.log(err));
+    const format = ytdl.filterFormats(info.formats, "audioonly");
+
+    res.json(format[1].url);
+ 
+  } catch (err) {
+    console.error(err);
+    res.json({"error":err})
+  }
 });
